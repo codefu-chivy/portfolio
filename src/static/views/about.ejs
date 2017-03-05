@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Chival Trotman</title>
+  </head>  
+  <body>
+    <%- include("partials/navbar") %>
+    <div id="about-container">
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a data-toggle="tab" href="#about">About</a></li>
+        <li><a data-toggle="tab" href="#skills">Technical Skills</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="about" class="tab-pane active">
+          <img src="/static/images/153.jpg" class="img-circle" width="200" height="200"/>
+          <p>This is my bio</p>
+        </div>
+        <div id="skills" class="tab-pane">
+          <div class="img-container">
+            <div class="row1">
+              <figure>
+                <img src="/static/images/html.png" alt="html"/>
+                <br/>
+                <figcaption>HTML 5</figcaption>
+              </figure>
+              <figure>
+                <img src="/static/images/css.jpg" alt="css"/>
+                <br/>
+                <figcaption>CSS 3</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>          
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </body>
+</html>          

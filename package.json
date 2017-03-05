@@ -1,0 +1,27 @@
+{
+  "name": "chivy-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio of my works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefu-chivy/portfolio.git"
+  },
+  "author": "Chival Trotman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefu-chivy/portfolio/issues"
+  },
+  "homepage": "https://github.com/codefu-chivy/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "bootstrap": "^3.3.7",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.8.5"
+  }
+}
