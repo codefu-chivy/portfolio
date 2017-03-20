@@ -19,9 +19,12 @@
   "dependencies": {
     "body-parser": "^1.17.0",
     "bootstrap": "^3.3.7",
+    "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
+    "emailjs": "^1.0.8",
     "express": "^4.15.0",
     "jquery": "^3.1.1",
-    "mongoose": "^4.8.5"
+    "mongoose": "^4.8.5",
+    "nodemailer": "^3.1.7"
   }
 }
