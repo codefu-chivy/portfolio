@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Chival Trotman</title>
-  </head>  
+<html> 
+  <%- include("partials/head") %>
   <body>
     <%- include("partials/navbar") %>
+    <div id="blur"></div>
     <div id="about-container">
-      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-        <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-        <li><a data-toggle="tab" href="#skills">Technical Skills</a></li>
-      </ul>
-      <div class="tab-content">
-        <div id="about" class="tab-pane active">
-          <img src="/static/images/153.jpg" class="img-circle" width="200" height="200"/>
-          <p>This is my bio</p>
-        </div>
-        <div id="skills" class="tab-pane">
-          <div class="img-container">
-            <div class="row1">
-              <figure>
-                <img src="/static/images/html.png" alt="html"/>
-                <br/>
-                <figcaption>HTML 5</figcaption>
-              </figure>
-              <figure>
-                <img src="/static/images/css.jpg" alt="css"/>
-                <br/>
-                <figcaption>CSS 3</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>          
+      <div id="about">
+        <h2 class="title">About Me</h2>
+        <p><span id="bio"><span class="inner-bio">let Chival_Bio = new Bio("</span>I'm Chival, a fresh full stack developer based in New York City. After graduating from university, 
+        I developed a passion for web development and began learning as much as I could. From HTML and CSS to all things Javascript, I was determined to pave my way to a new career. It's never too late to start doing what you love.
+        Currently, my go-to tech stack is MongoDB, Express/Node, and React, and I'm excited to learn other technologies in my journey. In my spare time you can find me jamming on the piano and bass.<span class="inner-bio">");</span></span></p>
       </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <div id="skills" class="tab-pane">
+        <h2 class="title tech-title">Technical Skills</h2>
+        <div class="skills-container">
+          <h3 class="title-skill" id="html">HTML 5</h3>
+          <h3 class="title-skill" id="css">CSS 3</h3>
+          <h3 class="title-skill" id="javascript">JavaScript</h3>
+          <h3 class="title-skill" id="jquery">JQuery</h3>
+          <h3 class="title-skill" id="bootstrap">Bootstrap</h3>
+          <h3 class="title-skill" id="react">React.js</h3>
+          <h3 class="title-skill" id="node">Node.js</h3>
+          <h3 class="title-skill" id="mongo">MongoDB</h3>
+          <h3 class="title-skill" id="git">Git</h3>
+          <h3 class="title-skill" id="ejs">EJS</h3>
+        </div>
+      </div>
+    </div>          
+    <%- include("partials/scripts") %>
   </body>
 </html>          

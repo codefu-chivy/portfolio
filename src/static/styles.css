@@ -1,0 +1,248 @@
+body {
+    text-align: center;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: silver !important;
+    z-index: 5;
+}
+#blur {
+    background-image: url("/static/images/new-york-1745087_1920.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-3;
+}
+#about {
+    margin-bottom: 100px;
+}
+.row {
+    margin: 0px auto;
+}
+figure {
+    float: left;
+}
+img {
+    margin: 10px;
+}
+.skills-container {
+    width: 60%;
+    margin: 0px auto;
+}
+.description {
+    width: 300px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    /*background-color: grey;*/
+    color: black;
+}
+figcaption {
+    font-size: 20px;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+}
+.app-name {
+    width: 290px;
+    margin: 10px auto;
+    text-decoration: underline;
+}
+.nav-link {
+    color: white !important;
+    font-size: 25px !important;
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
+@keyframes slideup {
+    from {top: -2000px;}
+    to {top: 100px;}
+}
+.btn {
+    margin: 10px auto !important;
+    width: 100px !important;
+    font-size: 18px !important;
+}
+.title {
+    width: 180px;
+    height: 60px;
+    background-color: grey;
+    margin: 10px auto;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.tech-title {
+    height: 80px;
+}
+.proj-img {
+    width: 300px;
+    height: 150px;
+}
+#bio {
+    text-align: left;
+    display: inline-block;
+    font-size: 18px;
+    width: 50%;
+    margin: 25px;
+}
+.inner-bio {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+/*.skills {
+    width: 150px;
+    height: 130px;
+}*/
+.title-skill {
+    display: inline-block;
+    margin: 10px;
+    height: 90px;
+    width: 140px;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: Cairo, sans-serif;
+    border-radius: 5px;
+}
+#html {
+    background-color: orangered;
+}
+#css {
+    background-color: steelblue;
+}
+#javascript {
+    background-color: gold;
+    color: black;
+}
+#jquery {
+    background-color: blue;
+}
+#bootstrap {
+    background-color: indigo;
+}
+#react {
+    background-color: mediumturquoise;
+}
+#node {
+    background-color: limegreen;
+}
+#mongo {
+    background-color: forestgreen;
+}
+#git {
+    background-color: brown;
+}
+#ejs {
+   background-color: darkgrey; 
+}
+#not-found {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 500px;
+}
+ul {
+    list-style-type: none;
+    background-color: lightslategray !important;
+    font-family: Cairo, sans-serif;
+    box-shadow: 3px 3px 3px  dimgrey;
+}
+li {
+    float: left;
+    /*border-right: 2px solid white;*/
+}
+a {
+    text-decoration: none !important;
+}
+#title {
+    color: white !important;
+}
+.center {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.send-mail {
+    width: 60%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    text-align: left;
+}
+label {
+    margin: 10px;
+}
+.contacts {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+#projects-container, #about-container, #contact-container {
+    width: 60%;
+    margin: 0px auto;
+    background-color: white;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 10px grey;
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+    animation-name: slideup;
+    animation-duration: 0.4s;
+}
+/*#about-container {
+    height: 1100px;
+}*/
+#front-end, #full-stack {
+    margin: 0px auto;
+}
+.projects {
+    display: inline-block;
+    border: 1px solid darkgray;
+    background-color: gainsboro;
+    margin: 10px;
+    box-shadow: 4px 4px 4px gainsboro;
+}
+.built {
+    font-weight: bold;
+    font-style: italic;
+}
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    #bio {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #projects-container, #about-container, #contact-container {
+        width: 95%;
+        top: 280px;
+    }
+    li {
+        float: none;
+    }
+    .nav-link {
+        margin-right: 140px;
+        font-size: 20px !important;
+    }
+}

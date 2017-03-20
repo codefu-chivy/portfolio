@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <%- include("partials/head") %>
+  <body>
+    <%- include("partials/navbar") %>
+    <div id="blur"></div>
+    <div id="contact-container">
+      <h2 class="title">Contact Me</h2>
+      <a href="https://www.instagram.com/fusion_force/" target="_blank"><img class="contacts" src="/static/images/instagram.png" alt="instagram" title="instagram"/></a>
+      <a href="https://www.facebook.com/chival.trotman" target="_blank"><img class="contacts" src="/static/images/fb.png" alt="facebook" title="facebook"/></a>
+      <div>
+        <h3 class="title">Contact By Email</h3>
+        <form class="send-mail" method="POST" action="/send">
+          <label for="name">Name: </label>
+          <input class="form-control" id="name" name="name" type="text" placeholder="Your name" required/>
+          <label for="address">Address: </label>
+          <input class="form-control" id="address" name="address" type="text" placeholder="Your address" required/>
+          <label for="subject">Subject: </label>
+          <input class="form-control" id="subject" name="subject" type="text" placeholder="Subject" required/>
+          <label for="message">Message: </label>
+          <textarea class="form-control" name="message" id="message" placeholder="Enter message here" required></textarea> 
+          <button class="btn btn-success" type="submit">Submit</button>
+        </form>  
+      </div>
+    </div>
+    <%- include("partials/scripts") %>
+  </body>
+</html>      
