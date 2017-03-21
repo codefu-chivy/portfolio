@@ -155,9 +155,10 @@ figcaption {
 }
 #not-found {
     color: white;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
-    margin-top: 500px;
+    margin-top: 300px;
+    text-shadow: 3px 3px black;
 }
 ul {
     list-style-type: none;
@@ -244,5 +245,9 @@ nav {
     .nav-link {
         margin-right: 140px;
         font-size: 20px !important;
+    }
+    #not-found {
+        font-size: 40px;
+        top: 200px;
     }
 }
