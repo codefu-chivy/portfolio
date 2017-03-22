@@ -85,6 +85,7 @@ figcaption {
     color: white;
     font-weight: bold;
     border-radius: 7px;
+    box-shadow: 4px 4px darkgrey;
 }
 .tech-title {
     height: 80px;
@@ -229,6 +230,10 @@ nav {
     z-index: 10;
     width: 100%;
 }
+#collapse {
+    visibility: hidden;
+    display: none;
+}
 @media screen and (max-width: 1200px) {
     #bio {
         width: 85%;
@@ -243,8 +248,21 @@ nav {
         float: none;
     }
     .nav-link {
-        margin-right: 140px;
+        margin-right: 160px;
         font-size: 20px !important;
+        visibility: hidden;
+        display: none;
+    }
+    #col-button {
+        background-color: lightslategray !important;
+        color: white;
+        border: 2px solid white;
+        position: relative;
+        right: 45px;
+    }
+    .nav-link-expand {
+        visibility: visible;
+        display: initial;
     }
     #not-found {
         font-size: 40px;

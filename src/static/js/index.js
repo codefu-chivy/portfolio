@@ -1,11 +1,26 @@
 $(function() {
-    $(window).scroll(function() {
-        if($(window).scrollTop() >= 60) {
-            $("nav").addClass("navbar-fix");
+    let minimize = false;
+    function collapse() {
+        if ($(window).width() <= 677) {
+            $("#col-button").removeClass("collapse");
         }
-        else if ($(window).scrollTop() === 0) {
-            $("nav").removeClass("navbar-fix");
+        else {
+            $("#col-button").addClass("collapse");
         }
+    };
+    collapse();
+    $(window).resize(function() {
+        collapse();
+    }) 
+    $("#col-button").click(function() {
+        minimize = !minimize;
+        if (minimize) {
+            $("#col-button").text("Minimize");
+        }
+        else {
+            $("#col-button").text("Menu");
+        }
+        $(".menu").toggleClass("nav-link-expand");
     })
-
 });
+
