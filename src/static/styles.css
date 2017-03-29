@@ -22,6 +22,7 @@ body {
     top:0;
     left:0;
     z-index:-3;
+    transform: scale(1.1);
 }
 #about {
     margin-bottom: 100px;
@@ -38,6 +39,7 @@ img {
 .skills-container {
     width: 60%;
     margin: 0px auto;
+    margin-top: 40px;
 }
 .description {
     width: 300px;
@@ -79,13 +81,11 @@ figcaption {
 .title {
     width: 180px;
     height: 60px;
-    background-color: grey;
+    background-color: lightslategrey;
     margin: 10px auto;
-    padding: 5px;
+    padding: 6px;
     color: white;
     font-weight: bold;
-    border-radius: 7px;
-    box-shadow: 4px 4px darkgrey;
 }
 .tech-title {
     height: 80px;
@@ -98,8 +98,19 @@ figcaption {
     text-align: left;
     display: inline-block;
     font-size: 18px;
-    width: 50%;
+    width: 55%;
     margin: 25px;
+}
+@keyframes iconslide {
+    from {font-size: 160px;}
+    to {font-size: 120px;}
+}
+.colored {
+    font-size: 120px;
+    margin: 25px;
+    display: inline-block;
+    animation-duration: 0.8s;
+    animation-name: iconslide;
 }
 .inner-bio {
     font-family: monospace;
@@ -122,37 +133,6 @@ figcaption {
     font-weight: bold;
     font-family: Cairo, sans-serif;
     border-radius: 5px;
-}
-#html {
-    background-color: orangered;
-}
-#css {
-    background-color: steelblue;
-}
-#javascript {
-    background-color: gold;
-    color: black;
-}
-#jquery {
-    background-color: blue;
-}
-#bootstrap {
-    background-color: indigo;
-}
-#react {
-    background-color: mediumturquoise;
-}
-#node {
-    background-color: limegreen;
-}
-#mongo {
-    background-color: forestgreen;
-}
-#git {
-    background-color: brown;
-}
-#ejs {
-   background-color: darkgrey; 
 }
 #not-found {
     color: white;
@@ -207,6 +187,7 @@ label {
     margin-bottom: 20px;
     animation-name: slideup;
     animation-duration: 0.4s;
+    padding: 40px;
 }
 /*#about-container {
     height: 1100px;
@@ -267,5 +248,8 @@ nav {
     #not-found {
         font-size: 40px;
         top: 200px;
+    }
+    .colored {
+        font-size: 80px;
     }
 }
