@@ -79,13 +79,11 @@ figcaption {
     font-size: 18px !important;
 }
 .title {
-    width: 180px;
-    height: 60px;
-    background-color: lightslategrey;
     margin: 10px auto;
     padding: 6px;
-    color: white;
+    color: lightslategray;
     font-weight: bold;
+    font-size: 40px;
 }
 .tech-title {
     height: 80px;
