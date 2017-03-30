@@ -177,7 +177,7 @@ label {
     margin-top: 50px;
 }
 #projects-container, #about-container, #contact-container {
-    width: 60%;
+    width: 70%;
     margin: 0px auto;
     background-color: white;
     border: 1px solid silver;
@@ -224,6 +224,7 @@ nav {
     #projects-container, #about-container, #contact-container {
         width: 95%;
         top: 280px;
+        padding: 15px;
     }
     li {
         float: none;
