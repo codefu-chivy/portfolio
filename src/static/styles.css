@@ -221,8 +221,9 @@ nav {
 @media screen and (max-width: 700px) {
     #projects-container, #about-container, #contact-container {
         width: 95%;
-        top: 280px;
-        padding: 15px;
+        top: 200px;
+        padding: 0px;
+        margin-bottom: 10px;
     }
     li {
         float: none;
@@ -250,5 +251,16 @@ nav {
     }
     .colored {
         font-size: 80px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .projects {
+        width: 95%;
+    }
+    .proj-img {
+        width: 85%;
+    }
+    .description {
+        width: 90%;
     }
 }
