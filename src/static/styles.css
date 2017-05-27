@@ -92,12 +92,20 @@ figcaption {
     width: 300px;
     height: 150px;
 }
+#entire {
+    width: 70%;
+    margin: 0px auto;
+    background-color: dimgrey;
+    color: white;
+    border-radius: 10px;
+}
 #bio {
     text-align: left;
     display: inline-block;
     font-size: 18px;
-    width: 55%;
+    width: 85%;
     margin: 25px;
+    font-family: monospace;
 }
 @keyframes iconslide {
     from {font-size: 160px;}
@@ -110,12 +118,21 @@ figcaption {
     animation-duration: 0.8s;
     animation-name: iconslide;
 }
-.inner-bio {
+#let {
+    color: cyan;
+}
+#keyword {
+    color: deeppink;
+}
+#string {
+    color: yellow;
+}
+/*.inner-bio {
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
     font-style: italic;
-}
+}*/
 /*.skills {
     width: 150px;
     height: 130px;
