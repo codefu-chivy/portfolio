@@ -21,6 +21,6 @@ $(function() {
             $("#col-button").text("Menu");
         }
         $(".menu").toggleClass("nav-link-expand");
-    })
+    }) 
 });
 
