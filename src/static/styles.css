@@ -127,16 +127,9 @@ figcaption {
 #string {
     color: yellow;
 }
-/*.inner-bio {
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-}*/
-/*.skills {
-    width: 150px;
-    height: 130px;
-}*/
+.remove-flicker {
+    visibility: hidden;
+}
 .title-skill {
     display: inline-block;
     margin: 10px;
@@ -279,5 +272,8 @@ nav {
     }
     .description {
         width: 90%;
+    }
+    #entire {
+        width: 98%;
     }
 }
