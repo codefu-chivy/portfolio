@@ -1,5 +1,16 @@
 $(function() {
     let minimize = false;
+    let remove = false;
+    function flickerControl() {
+        remove = !remove;
+        if (remove) {
+            $("#flicker").addClass("remove-flicker");
+        }
+        else {
+            $("#flicker").removeClass("remove-flicker");
+        }
+    }
+    setInterval(flickerControl, 500);
     function collapse() {
         if ($(window).width() <= 677) {
             $("#col-button").removeClass("collapse");
@@ -21,6 +32,6 @@ $(function() {
             $("#col-button").text("Menu");
         }
         $(".menu").toggleClass("nav-link-expand");
-    }) 
+    });
 });
 
