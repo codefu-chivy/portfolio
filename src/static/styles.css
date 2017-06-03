@@ -39,7 +39,6 @@ img {
 .skills-container {
     width: 60%;
     margin: 0px auto;
-    margin-top: 40px;
 }
 .description {
     width: 300px;
@@ -60,6 +59,7 @@ figcaption {
 .app-name {
     width: 290px;
     margin: 10px auto;
+    font-size: 20px;
 }
 .nav-link {
     color: white !important;
@@ -82,7 +82,7 @@ figcaption {
     padding: 6px;
     color: lightslategray;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 .tech-title {
     height: 80px;
