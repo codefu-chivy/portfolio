@@ -1,7 +1,7 @@
 $(function() {
     let minimize = false;
     let remove = false;
-    let string = "I'm Chival, a fresh web developer with a passion for coding. After graduating from university, I developed a love for web development and began learning as much as I could. From HTML and CSS to all things Javascript, I was determined to pave my way to a new career. It's never too late to start doing what you love. Currently, my go-to tech stack is MongoDB, Express/Node, and React, and I'm excited to learn other technologies in my journey. In my spare time you can find me jamming on the piano and bass.'"
+    let string = "I'm Chival, a fresh web developer with a passion for coding. After graduating from university, I developed a love for web development and began learning as much as I could. From HTML and CSS to all things JavaScript, I was determined to pave my way to a new career. It's never too late to start doing what you love. Currently, my go-to tech stack is MongoDB, Express/Node, and React, and I'm excited to learn other technologies in my journey. In my spare time you can find me jamming on the piano and bass.'"
     let count = 0;
     function individual() {
         if (count >= string.length) {
