@@ -45,6 +45,25 @@ app.get("/contact", (req, res) => {
 app.get("/projects", (req, res) => {
     res.render("projects.ejs");
 });
+
+app.get("/tally-visit", (req, res) => {
+    console.log("here")
+    let mailOptions = {
+        from: "<chivy360@gmail.com>",
+        to: "chivy360@gmail.com", 
+        subject: "You have a visitor",
+        text: "Someone has visited your portfolio", 
+        html: '<p>Someone has visited your portfolio"</p>'
+    };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message %s sent: %s', info.messageId, info.response);
+        res.json({success: true});
+    });
+});
+
 app.post("/send", (req, res) => {
     let mailOptions = {
     from: "<" + req.body.address + ">",
@@ -61,9 +80,11 @@ app.post("/send", (req, res) => {
     res.redirect("/about");
     });
 });
+
 app.get("*", (req, res) => {
     res.render("404.ejs");
-})
+});
+
 
 app.listen(port, () => {
     console.log("Listening on port 3000");
