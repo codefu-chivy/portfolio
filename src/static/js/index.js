@@ -64,8 +64,6 @@ $(function() {
     });
 
     if (!localStorage.getItem("visited")) {
-        console.log("here");
-        console.log(localStorage.getItem("visited"))
         $.get("/tally-visit", function(data) {
             if (data.success) {
                 localStorage.setItem("visited", "true");
