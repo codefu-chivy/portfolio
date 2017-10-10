@@ -53,7 +53,7 @@ app.get("/tally-visit", (req, res) => {
         to: "chivy360@gmail.com", 
         subject: "You have a visitor",
         text: "Someone has visited your portfolio", 
-        html: '<p>Someone has visited your portfolio"</p>'
+        html: '<p>Someone has visited your portfolio</p>'
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
