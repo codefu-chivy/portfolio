@@ -5,6 +5,9 @@ body {
     background-color: silver !important;
     z-index: 5;
 }
+ul {
+    padding: 0px;
+}
 #blur {
     background-image: url("/static/images/new-york-1745087_1920.jpg");
     -webkit-background-size: cover;
@@ -82,13 +85,13 @@ figcaption {
     padding: 6px;
     color: lightslategray;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 .tech-title {
     height: 80px;
 }
 .proj-img {
-    width: 300px;
+    width: 100%;
     height: 150px;
     margin: 0px
 }
@@ -167,7 +170,8 @@ a {
 }
 .center {
     margin-top: 30px;
-    margin-left: 50px;
+    width: 100%;
+    /*margin-left: 50px;*/
 }
 .send-mail {
     width: 60%;
@@ -197,13 +201,11 @@ label {
     animation-duration: 0.4s;
     padding: 40px;
 }
-/*#about-container {
-    height: 1100px;
-}*/
 #front-end, #full-stack {
     margin: 0px auto;
 }
 .projects {
+    width: 300px;
     display: inline-block;
     border: 1px solid gainsboro;
     background-color: white;
@@ -239,7 +241,8 @@ nav {
         float: none;
     }
     .nav-link {
-        margin-right: 160px;
+        /*margin-right: 160px;*/
+        left: 0px;
         font-size: 20px !important;
         visibility: hidden;
         display: none;
@@ -248,8 +251,6 @@ nav {
         background-color: lightslategray !important;
         color: white;
         border: 2px solid white;
-        position: relative;
-        right: 45px;
     }
     .nav-link-expand {
         visibility: visible;
