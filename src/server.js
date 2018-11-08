@@ -47,10 +47,9 @@ app.get("/projects", (req, res) => {
 });
 
 app.get("/tally-visit", (req, res) => {
-    console.log("here")
     let mailOptions = {
-        from: "<chivy360@gmail.com>",
-        to: "chivy360@gmail.com", 
+        from: "<tchival@yahoo.com>",
+        to: "tchival@yahoo.com", 
         subject: "You have a visitor",
         text: "Someone has visited your portfolio", 
         html: '<p>Someone has visited your portfolio</p>'
@@ -67,7 +66,7 @@ app.get("/tally-visit", (req, res) => {
 app.post("/send", (req, res) => {
     let mailOptions = {
     from: "<" + req.body.address + ">",
-    to: "chivy360@gmail.com", 
+    to: "tchival@yahoo.com", 
     subject: req.body.subject,
     text: req.body.message, 
     html: '<p>' + req.body.message + '</p>'
@@ -87,5 +86,5 @@ app.get("*", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("Listening on port 3000");
+    console.log("Listening on port 8080");
 });
